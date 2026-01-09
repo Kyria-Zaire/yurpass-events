@@ -12,10 +12,15 @@ export const metadata: Metadata = {
   title: "YURPASS | L'événementiel local redéfini",
   description: "Rejoignez YURPASS, le club d'événements exclusifs de Yunicity. Découvrez des expériences uniques et rencontrez des personnes exceptionnelles à Reims.",
   keywords: ["YURPASS", "Yunicity", "événements", "Reims", "networking", "expériences exclusives"],
+  icons: {
+    icon: "/images/yurpass.png",
+    apple: "/images/yurpass.png",
+  },
   openGraph: {
     title: "YURPASS | L'événementiel local redéfini",
     description: "Rejoignez YURPASS, le club d'événements exclusifs de Yunicity.",
     type: "website",
+    images: ["/images/yurpass.png"],
   },
 };
 
