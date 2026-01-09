@@ -2,6 +2,7 @@
 
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
+import { sendNewCandidateNotification } from "@/lib/email";
 
 const applySchema = z.object({
   name: z.string().min(2, "Le nom doit contenir au moins 2 caractères"),
@@ -58,6 +59,12 @@ export async function applyAction(
         email,
         status: "PENDING",
       },
+    });
+
+    // Envoyer une notification à l'admin
+    await sendNewCandidateNotification(name, email).catch((err) => {
+      console.error("Failed to send admin notification:", err);
+      // On ne bloque pas le processus si l'email échoue
     });
 
     return {
