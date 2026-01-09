@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function AdminLogin() {
   const [password, setPassword] = useState("");
@@ -32,9 +33,13 @@ export default function AdminLogin() {
     <main className="min-h-screen bg-white flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
         <div className="text-center mb-12">
-          <p className="text-xs uppercase tracking-[0.3em] text-gray-400 mb-2">
-            YURPASS
-          </p>
+          <Image
+            src="/images/yurpass.png"
+            alt="YURPASS"
+            width={140}
+            height={40}
+            className="h-[40px] w-auto mx-auto mb-4"
+          />
           <h1 className="text-xl font-light text-black">Administration</h1>
         </div>
 
