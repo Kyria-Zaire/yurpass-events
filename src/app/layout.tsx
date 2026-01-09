@@ -34,6 +34,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/images/yurpass.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/yurpass.png" />
+      </head>
       <body className={`${inter.variable} font-sans antialiased bg-white`}>
         {children}
       </body>
