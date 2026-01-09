@@ -35,9 +35,10 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/images/yurpass.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/images/yurpass.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/yurpass.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/yurpass.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/yurpass.png" />
+        <link rel="shortcut icon" href="/images/yurpass.png" />
       </head>
       <body className={`${inter.variable} font-sans antialiased bg-white`}>
         {children}
