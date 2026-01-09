@@ -36,9 +36,9 @@ export default function AdminLogin() {
           <Image
             src="/images/yurpass.png"
             alt="YURPASS"
-            width={180}
-            height={52}
-            className="h-[52px] w-auto mx-auto mb-4"
+            width={280}
+            height={80}
+            className="h-[80px] w-auto mx-auto mb-6"
           />
           <h1 className="text-xl font-light text-black">Administration</h1>
         </div>
