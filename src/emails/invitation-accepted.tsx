@@ -26,8 +26,8 @@ export function InvitationAcceptedEmail({ name }: InvitationAcceptedEmailProps) 
           <Section style={logoSection}>
             <Img
               src="https://yurpass-events.vercel.app/images/yurpass.png"
-              width="160"
-              height="46"
+              width="200"
+              height="auto"
               alt="YURPASS"
               style={logo}
             />
@@ -69,7 +69,7 @@ export function InvitationAcceptedEmail({ name }: InvitationAcceptedEmailProps) 
             <Text style={detailItem}>
               <strong>Heure</strong>
               <br />
-              20h00
+              13h00
             </Text>
 
             <Text style={detailItem}>
